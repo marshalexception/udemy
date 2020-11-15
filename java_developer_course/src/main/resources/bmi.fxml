@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="bmi.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="500.0">
+            <children>
+                <Label layoutX="134.0" layoutY="39.0" text="BMI Calculator">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textFieldHeight" layoutX="176.0" layoutY="124.0" promptText="Enter height in meters" />
+                <TextField fx:id="textFieldWeight" layoutX="176.0" layoutY="166.0" promptText="Enter weight in kgs" />
+                <Button layoutX="251.0" layoutY="225.0" mnemonicParsing="false" onAction="#bmiButtonClicked" text="Show BMI" />
+                <Label fx:id="labelBMI" layoutX="98.0" layoutY="301.0" prefHeight="37.0" prefWidth="336.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelResult" layoutX="98.0" layoutY="381.0" prefHeight="37.0" prefWidth="336.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

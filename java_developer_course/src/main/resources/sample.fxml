@@ -1,0 +1,26 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<GridPane fx:controller="javafxml.Controller" xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10">
+
+    <children>
+        <AnchorPane prefHeight="150" prefWidth="300">
+            <children>
+                <TextField fx:id="textFieldOne" layoutX="50" layoutY="40"/>
+                <TextField fx:id="textFieldTwo" layoutX="50" layoutY="70"/>
+
+                <Button text="Addition" fx:id="sampleButton" onAction="#buttonAction" layoutX="50" layoutY="110"/>
+
+                <Label text="" fx:id="sampleLabel" layoutX="200" layoutY="110"/>
+            </children>
+        </AnchorPane>
+    </children>
+
+
+</GridPane>

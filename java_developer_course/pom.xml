@@ -20,7 +20,12 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <src.dir>src</src.dir>
     </properties>
+
+    <build>
+        <sourceDirectory>${src.dir}</sourceDirectory>
+    </build>
 
     <dependencies>
         <dependency>
