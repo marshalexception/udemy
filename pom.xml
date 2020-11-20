@@ -17,6 +17,7 @@
 
     <modules>
         <module>java_developer_course</module>
+        <module>stuff</module>
     </modules>
 
 </project>
