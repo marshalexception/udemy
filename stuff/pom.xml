@@ -21,7 +21,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <src.dir>src</src.dir>
         <test.dir>src/test</test.dir>
-        <junit.java.version>4.4</junit.java.version>
+        <junit-jupiter-api.version>5.6.2</junit-jupiter-api.version>
         <rx.java2.version>2.2.20</rx.java2.version>
     </properties>
 
@@ -32,15 +32,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.java.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>io.reactivex.rxjava2</groupId>
             <artifactId>rxjava</artifactId>
             <version>${rx.java2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit-jupiter-api.version}</version>
         </dependency>
     </dependencies>
 
